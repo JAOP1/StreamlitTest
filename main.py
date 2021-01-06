@@ -38,3 +38,7 @@ if __name__ == "__main__":
         posicion = pd.read_csv('Datasets/JohnsHopkins/Custom/Posicion_pais.csv', index_col = 'Country/Region')
 
         show_map(Datos_confirmados, posicion,"confirmado")
+
+        expander = st.beta_expander('Tarea')
+        covid_homework= read_markdown_file('Homeworks/EDAHomework.md',)
+        expander.write(covid_homework)
