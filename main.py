@@ -39,6 +39,6 @@ if __name__ == "__main__":
 
         show_map(Datos_confirmados, posicion,"confirmado")
 
-        expander = st.beta_expander('Tarea')
+        expander_ = st.beta_expander('Tarea')
         covid_homework= read_markdown_file('Homeworks/EDAHomework.md',)
-        expander.write(covid_homework)
+        expander_.write(covid_homework)
